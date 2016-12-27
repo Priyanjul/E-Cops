@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Locate Yourself
+</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="initial-scale=1.0,width=device-width">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Rubik" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- CSS -->
+       <!-- <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>-->
+        <!-- 
+        <link rel="stylesheet" href="assets/prettyPhoto/css/prettyPhoto.css">
+        <link rel="stylesheet" href="assets/css/social-icons.css">-->
+        <link rel="stylesheet" href="assets/css/ebook-style.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+          <script>
+              $(document).ready(function(){
+               $('[data-toggle="popover"]').popover();   
+                });
+          </script>
+
+
+
+  </head>
+  <body style ="background:white ;">
+
+     <!-- Header -->
+        <div class="container-fluid" style="background-color: black;">
+            <div class="header row">
+              <div class="logo span4">
+                    <h1 style=" font-family: 'Press Start 2P', cursive;">  <a href="home.html" style="text-decoration:none; color: #ff6600;">E-Cops </a> </h1>
+                </div>
+                <div class="tel-skype span8" >
+                    <p><i class="icon-phone-sign"></i> Phone: 9876543210 <span class="pipe">|</span> <i class="icon-user"></i> Gmail: priyanjul@acm.org</p>
+                </div>
+            </div>
+        </div>
+
+    <div id="map">
+    <script>
+
+      function initMap() {
+        var myLatLng = {lat: 31.1, lng: 77.1};
+		var Bilaspur = {lat: 31.33, lng: 76.75};
+		var Chamba = {lat: 32.29, lng: 76.09};
+		var Hamirpur= {lat: 31.25, lng: 76.18};
+		var Kangra = {lat: 32.05, lng:76.18 };
+		var Kinnaur= {lat: 31.54, lng: 78.27};
+		var Kullu = {lat: 31.35, lng: 77.06};
+		var Lahaul = {lat: 32.58, lng: 77.03};
+		var Mandi = {lat: 31.42, lng:76.55 };
+		var Shimla = {lat: 31.612, lng: 77.1020};
+		var Sirmaur = {lat: 30.55, lng: 77.3};
+		var Solan= {lat: 30.905, lng:77.097 };
+		var Una = {lat: 31.468, lng : 76.271};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: Bilaspur,
+          map: map,
+          animation: google.maps.Animation.DROP,
+          title: 'Bilaspur'
+        });
+		var marker = new google.maps.Marker({
+          position: Chamba,
+          map: map,
+          animation: google.maps.Animation.DROP,
+          title: 'Chamba'
+        });
+
+		var marker = new google.maps.Marker({
+          position: Hamirpur,
+          map: map,
+          animation: google.maps.Animation.DROP,
+          title: 'Hamirpur'
+        });
+		var marker = new google.maps.Marker({
+          position: Kangra,
+          map: map,
+          animation: google.maps.Animation.DROP,
+          title: 'Kangra'
+        });
+
+		var marker = new google.maps.Marker({
+          position: Kinnaur,
+          map: map,
+          animation: google.maps.Animation.DROP,
+          title: 'Kinnaur'
+        });
+
+		var marker = new google.maps.Marker({
+          position: Kullu,
+          map: map,
+          animation: google.maps.Animation.DROP,
+          title: 'Kullu'
+        });
+
+		var marker = new google.maps.Marker({
+          position: Lahaul,
+          map: map,
+          animation: google.maps.Animation.DROP,
+          title: 'Lahaul'
+        });
+		var marker = new google.maps.Marker({
+          position: Mandi,
+          map: map,
+          animation: google.maps.Animation.DROP,
+          title: 'Mandi'
+        });
+		var marker = new google.maps.Marker({
+          position: Shimla,
+          map: map,
+          animation: google.maps.Animation.DROP,
+          title: 'Shimla'
+        });
+		var marker = new google.maps.Marker({
+          position: Sirmaur,
+          map: map,
+          animation: google.maps.Animation.DROP,
+          title: 'Sirmaur'
+        });
+		var marker = new google.maps.Marker({
+          position: Solan,
+          map: map,
+          animation: google.maps.Animation.DROP,
+          title: 'Solan'
+        });
+
+		var marker = new google.maps.Marker({
+          position: Una,
+          map: map,
+          animation: google.maps.Animation.DROP,
+          title: 'Una'
+        });
+
+         marker.addListener('click', toggleBounce);
+
+      }
+      function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+          marker.setAnimation(null);
+        } else {
+          marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMFFW-f7qM7aBWbp0G7ACzoLD47Gkmqws&callback=initMap"
+    async defer></script>
+	</div>
+
+	<div class="container" >
+		<div class="blocks" >
+			<div class="row">
+				<div class="col-sm-3" >			
+             <a href="#" title="Bilaspur" data-toggle="popover" data-placement="top" data-content="Address Tehsil Rd, Bilaspur, Ghumarwin, Himachal Pradesh 174021 (94180-03310)" input type="button" class="btn btn-info" value="Input Button" ><h3>Bilaspur - 174001</h3 ></a>
+				</div>
+				<div class="col-sm-3">
+           <a href="#" title="Chamba" data-toggle="popover" data-placement="top" data-content="Address Subhash Chowk Rd, Moti Tiba, Dalhousie, Himachal Pradesh 176303 (9418516807)" input type="button" class="btn btn-info" value="Input Button" ><h3>Chamba - 176310&nbsp;</h3></a>
+				</div>
+				<div class="col-sm-3">
+					<a href="#" title="Hamirpur" data-toggle="popover" data-placement="top" data-content="Address National Highway 88, Hamirpur, Himachal Pradesh 177033 (01972-224339)" input type="button" class="btn btn-info" value="Input Button" ><h3>Hamirpur - 176041</h3></a>
+				</div>
+				<div class="col-sm-3">
+					<a href="#" title="Kangra" data-toggle="popover" data-placement="top" data-content="Address Police Station, Shimla-Kangra Road, Jawalamukhi, Himachal Pradesh 176031 (01970222322)" input type="button" class="btn btn-info" value="Input Button" ><h3>Kangra - 176036&nbsp;</h3></a>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-sm-3">			
+					<a href="#" title="Kinnaur" data-toggle="popover" data-placement="top" data-content="Address Sangla, Himachal Pradesh 172106
+ (01786-222270)" input type="button" class="btn btn-info" value="Input Button" ><h3>Kinnaur - 172116&nbsp;&nbsp;</h3></a>
+				</div>
+				<div class="col-sm-3">
+					<a href="#" title="Kullu" data-toggle="popover" data-placement="top" data-content="Address Dhalpur, Kullu, Himachal Pradesh 175101
+(01902-224700)" input type="button" class="btn btn-info" value="Input Button" ><h3>Kullu - 175101&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></a>
+				</div>
+				<div class="col-sm-3">
+					<a href="#" title="Lahaul" data-toggle="popover" data-placement="top" data-content="Address Superintendent of Police, Lahaul, Himachal Pradesh 175132 (01900-222226)" input type="button" class="btn btn-info" value="Input Button" ><h3>Lahaul - 175142&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></a>
+				</div>
+				<div class="col-sm-3">
+					<a href="#" title="Mandi" data-toggle="popover" data-placement="top" data-content="Address Sabzi Mandi, Lower Bazar, Shimla, Himachal Pradesh 171001
+ (01905-222470) " input type="button" class="btn btn-info" value="Input Button" ><h3>Mandi - 175032&nbsp;&nbsp;&nbsp;</h3></a>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+        <div class="col-sm-3">
+				<a href="#" title="Shimla" data-toggle="popover" data-placement="top" data-content="Address Police Station, Sanjauli, Shimla, Himachal Pradesh 171006 (0177 284 1088)" input type="button" class="btn btn-info" value="Input Button" ><h3>Shimla - 171001 &nbsp;&nbsp;  </h3></a>
+				</div>
+				<div class="col-sm-3">
+					<a href="#" title="Sirmaur" data-toggle="popover" data-placement="top" data-content="Address Police Colony, Nahan, Himachal Pradesh 173001
+(01702-222557)" input type="button" class="btn btn-info" value="Input Button" ><h3>Sirmaur - 173023&nbsp;</h3></a>
+				</div>
+				<div class="col-sm-3">
+					<a href="#" title="Solan" data-toggle="popover" data-placement="top" data-content="Address Police Post, The Mall, Solan, Himachal Pradesh 173212 (0177 262 2205)" input type="button" class="btn btn-info" value="Input Button" ><h3>Solan - 173212&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></a>
+				</div>
+				<div class="col-sm-3">
+					<a href="#" title="Una" data-toggle="popover" data-placement="top" data-content="Address Una Police Station, Main Bazaar Road, Una, Himachal Pradesh 174303 (01975 225 056)" input type="button" class="btn btn-info" value="Input Button" ><h3>Una - 174301&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></a>
+				</div>
+			</div>
+			
+		</div>
+		
+		</div>
+		
+  <br>
+  <br>
+  <!--Footer-->
+<div>
+<br>
+<br>
+        <center> <iframe name="Complaint" src="footer.html" width="100%"  height="80px" style="box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.5);" 
+        frameborder="0" scrolling="yes" id="iframe"></iframe></div>
+</iframe></center>
+  </body>
+</html>

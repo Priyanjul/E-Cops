@@ -1,0 +1,27 @@
+letter	{display:block;
+	margin:1px;
+	margin-bottom:2px;
+	}
+date	{display:block;
+		margin:3px;
+		}
+
+address,org,add1,add2	{display:block;
+				margin-bottom:2px;
+				}
+greeting   { text-decoration:underline;
+		   font-weight:bold;
+         display:block;
+	     text-align:center;
+	    }
+para	{display:block;
+	margin:2px;
+	}
+fun	{ font-transformation:uppercase;
+	   font-weight:bold;
+	   color:red;
+	   }
+closing,name	{display:block;
+		text-align:right;
+	
+		}
